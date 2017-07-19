@@ -12,6 +12,8 @@
 		0D24B1E01F1F52B000CCF036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1DE1F1F52B000CCF036 /* Main.storyboard */; };
 		0D24B1E21F1F52B000CCF036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1E11F1F52B000CCF036 /* Assets.xcassets */; };
 		0D24B1E51F1F52B000CCF036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1E31F1F52B000CCF036 /* LaunchScreen.storyboard */; };
+		0D24B1ED1F1F538D00CCF036 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1EC1F1F538D00CCF036 /* GoogleService-Info.plist */; };
+		497C7D943C119C0150F295C5 /* Pods_TaskBurn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2616178D63512C4B9593230 /* Pods_TaskBurn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,11 @@
 		0D24B1E11F1F52B000CCF036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D24B1E41F1F52B000CCF036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D24B1E61F1F52B000CCF036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D24B1EC1F1F538D00CCF036 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0DA2B55C1F1F583600EF3786 /* TaskBurn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskBurn.entitlements; sourceTree = "<group>"; };
+		84D5F7F8B68D937E65B07536 /* Pods-TaskBurn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskBurn.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskBurn/Pods-TaskBurn.release.xcconfig"; sourceTree = "<group>"; };
+		D2616178D63512C4B9593230 /* Pods_TaskBurn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskBurn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4B12418FD4E969C26635A8 /* Pods-TaskBurn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskBurn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskBurn/Pods-TaskBurn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497C7D943C119C0150F295C5 /* Pods_TaskBurn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08FB12853E61D92C32B8CF1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD4B12418FD4E969C26635A8 /* Pods-TaskBurn.debug.xcconfig */,
+				84D5F7F8B68D937E65B07536 /* Pods-TaskBurn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0D24B1CE1F1F52B000CCF036 = {
 			isa = PBXGroup;
 			children = (
 				0D24B1D91F1F52B000CCF036 /* TaskBurn */,
 				0D24B1D81F1F52B000CCF036 /* Products */,
+				08FB12853E61D92C32B8CF1E /* Pods */,
+				F3E8DEF3BDDA580570860B42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,24 @@
 		0D24B1D91F1F52B000CCF036 /* TaskBurn */ = {
 			isa = PBXGroup;
 			children = (
+				0DA2B55C1F1F583600EF3786 /* TaskBurn.entitlements */,
 				0D24B1DA1F1F52B000CCF036 /* AppDelegate.swift */,
 				0D24B1DC1F1F52B000CCF036 /* ViewController.swift */,
 				0D24B1DE1F1F52B000CCF036 /* Main.storyboard */,
 				0D24B1E11F1F52B000CCF036 /* Assets.xcassets */,
 				0D24B1E31F1F52B000CCF036 /* LaunchScreen.storyboard */,
 				0D24B1E61F1F52B000CCF036 /* Info.plist */,
+				0D24B1EC1F1F538D00CCF036 /* GoogleService-Info.plist */,
 			);
 			path = TaskBurn;
+			sourceTree = "<group>";
+		};
+		F3E8DEF3BDDA580570860B42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2616178D63512C4B9593230 /* Pods_TaskBurn.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D24B1E91F1F52B000CCF036 /* Build configuration list for PBXNativeTarget "TaskBurn" */;
 			buildPhases = (
+				30F18CDDAC60A06F5BEC4AF9 /* [CP] Check Pods Manifest.lock */,
 				0D24B1D31F1F52B000CCF036 /* Sources */,
 				0D24B1D41F1F52B000CCF036 /* Frameworks */,
 				0D24B1D51F1F52B000CCF036 /* Resources */,
+				A7E4999CD75C7CF60183ABDB /* [CP] Embed Pods Frameworks */,
+				3602CFEC342CAF10DAF7B425 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +128,11 @@
 				TargetAttributes = {
 					0D24B1D61F1F52B000CCF036 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -123,12 +160,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D24B1E51F1F52B000CCF036 /* LaunchScreen.storyboard in Resources */,
+				0D24B1ED1F1F538D00CCF036 /* GoogleService-Info.plist in Resources */,
 				0D24B1E21F1F52B000CCF036 /* Assets.xcassets in Resources */,
 				0D24B1E01F1F52B000CCF036 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30F18CDDAC60A06F5BEC4AF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3602CFEC342CAF10DAF7B425 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskBurn/Pods-TaskBurn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7E4999CD75C7CF60183ABDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskBurn/Pods-TaskBurn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0D24B1D31F1F52B000CCF036 /* Sources */ = {
@@ -271,8 +357,10 @@
 		};
 		0D24B1EA1F1F52B000CCF036 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD4B12418FD4E969C26635A8 /* Pods-TaskBurn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaskBurn/TaskBurn.entitlements;
 				DEVELOPMENT_TEAM = DYK92P2HLR;
 				INFOPLIST_FILE = TaskBurn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -285,8 +373,10 @@
 		};
 		0D24B1EB1F1F52B000CCF036 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84D5F7F8B68D937E65B07536 /* Pods-TaskBurn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TaskBurn/TaskBurn.entitlements;
 				DEVELOPMENT_TEAM = DYK92P2HLR;
 				INFOPLIST_FILE = TaskBurn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -316,6 +406,7 @@
 				0D24B1EB1F1F52B000CCF036 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
