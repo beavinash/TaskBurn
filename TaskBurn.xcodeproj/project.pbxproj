@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0D24B1DB1F1F52B000CCF036 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24B1DA1F1F52B000CCF036 /* AppDelegate.swift */; };
-		0D24B1DD1F1F52B000CCF036 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D24B1DC1F1F52B000CCF036 /* ViewController.swift */; };
 		0D24B1E01F1F52B000CCF036 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1DE1F1F52B000CCF036 /* Main.storyboard */; };
 		0D24B1E21F1F52B000CCF036 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1E11F1F52B000CCF036 /* Assets.xcassets */; };
 		0D24B1E51F1F52B000CCF036 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1E31F1F52B000CCF036 /* LaunchScreen.storyboard */; };
 		0D24B1ED1F1F538D00CCF036 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D24B1EC1F1F538D00CCF036 /* GoogleService-Info.plist */; };
+		0DA2B55E1F1F59D900EF3786 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA2B55D1F1F59D900EF3786 /* MainViewController.swift */; };
 		497C7D943C119C0150F295C5 /* Pods_TaskBurn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2616178D63512C4B9593230 /* Pods_TaskBurn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D24B1D71F1F52B000CCF036 /* TaskBurn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskBurn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D24B1DA1F1F52B000CCF036 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D24B1DC1F1F52B000CCF036 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D24B1DF1F1F52B000CCF036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D24B1E11F1F52B000CCF036 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D24B1E41F1F52B000CCF036 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D24B1E61F1F52B000CCF036 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D24B1EC1F1F538D00CCF036 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0DA2B55C1F1F583600EF3786 /* TaskBurn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaskBurn.entitlements; sourceTree = "<group>"; };
+		0DA2B55D1F1F59D900EF3786 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84D5F7F8B68D937E65B07536 /* Pods-TaskBurn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskBurn.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskBurn/Pods-TaskBurn.release.xcconfig"; sourceTree = "<group>"; };
 		D2616178D63512C4B9593230 /* Pods_TaskBurn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskBurn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4B12418FD4E969C26635A8 /* Pods-TaskBurn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskBurn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskBurn/Pods-TaskBurn.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,8 +75,8 @@
 			children = (
 				0DA2B55C1F1F583600EF3786 /* TaskBurn.entitlements */,
 				0D24B1DA1F1F52B000CCF036 /* AppDelegate.swift */,
-				0D24B1DC1F1F52B000CCF036 /* ViewController.swift */,
 				0D24B1DE1F1F52B000CCF036 /* Main.storyboard */,
+				0DA2B55D1F1F59D900EF3786 /* MainViewController.swift */,
 				0D24B1E11F1F52B000CCF036 /* Assets.xcassets */,
 				0D24B1E31F1F52B000CCF036 /* LaunchScreen.storyboard */,
 				0D24B1E61F1F52B000CCF036 /* Info.plist */,
@@ -221,8 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D24B1DD1F1F52B000CCF036 /* ViewController.swift in Sources */,
 				0D24B1DB1F1F52B000CCF036 /* AppDelegate.swift in Sources */,
+				0DA2B55E1F1F59D900EF3786 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
